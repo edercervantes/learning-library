@@ -272,7 +272,7 @@ Here we will upload the wallet and lab-resources zip files to the instance. They
     
     `scp -i <path/to/your/private-key> <path/to/your/Wallet_orcl4py.zip> opc@<instance IP address>:/home/opc/atp_wallet`
 
-Then, run this command to upload the lab-resources zip.
+- Then, run this command to upload the lab-resources zip.
     
     `scp -i <path/to/your/private-key> <path/to/your/lab-resources.zip> opc@<instance IP address>:/home/opc/tmp/lab-resources`
 	
