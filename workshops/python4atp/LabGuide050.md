@@ -332,7 +332,7 @@ Now as you will remember from before, we will again run use resource manager to 
 
 - You will see a list of variables that will be used. Find **PUBLIC_IP** and paste the public ip address for your instance in the given field. Then click **Next**.
 
-    ![](images/050/023.png)
+    ![](images/050/090.png)
 
 - Finally, review your variables and make sure everything looks good. Then click **create**.
 
