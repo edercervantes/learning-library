@@ -448,7 +448,7 @@ For more information about the Marketplace Developer Image [click here](https://
 
     ![](images/050/068.png)
 
-    Enter the **vncpasswd** password you created earlier. 
+    Enter the **vncpasswd** password `helloWorld123`. 
 
 	![](images/050/040.png)
 
