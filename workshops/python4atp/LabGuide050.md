@@ -54,13 +54,10 @@ You have already applied for and received your Oracle Cloud Free Tier Account.
 
 ### **STEP 3:** Download Terraform zip folder
 
-- Grab the first zip file [here](https://github.com/edercervantes/Script-1-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
+- Grab the first script zip file [here](https://github.com/edercervantes/Script-1-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
 
     ![](images/050/074.png)
 
-- Grab the second zip file [here](https://github.com/edercervantes/Script-2-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
-
-    ![](images/050/018.png)
 
 ### **STEP 4:** Get Your Oracle Cloud Credentials
 
@@ -279,7 +276,43 @@ Here we will upload the wallet and lab-resources zip files to the instance. They
     ![](images/050/080.png)
 
 
-### **STEP 12:** Connect to your Marketplace Developer Image
+### **STEP 12:** Prepare the second script
+
+- Grab the second script zip file [here](https://github.com/edercervantes/Script-2-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
+
+    ![](images/050/018.png)
+
+- Unzip it and open the folder.
+
+- Open the **ssh_keys** folder and note that it is empty. This is because we need to add our private key.
+
+    ![](images/050/081.png)
+
+- Go to the location of your private key, then copy and paste it into your ssh_keys folder. Then, open **variables.tf** in any text editor and for the ssh_private_key, add the name of your private key. In our case, we will use `id_rsa`. Save it and close the file.
+
+- Then, open ocd2atp_connect in any text editor, and change the dumpfile value to your bucket expdp_alpha.dmp url. Save it and close the file.
+
+    ![](images/050/083.png)
+
+    ![](images/050/082.png)
+
+- Then, open create_extern_table in any text editor, and change the file_uri_list value to your bucket credit_scoring_100k_pq url. Save it and close the file.
+
+    ![](images/050/084.png)
+
+    ![](images/050/085.png)
+
+- Next, open create_cloud_cred in any text editor, and change the username and password values to the username and token you had saved earlier. Save it and close the file.
+
+    ![](images/050/086.png)
+
+    ![](images/050/087.png)
+
+- Now rezip your folder and remove the original zip.
+
+    ![](images/050/078.png)
+
+    ![](images/050/079.png)
 
 ### **STEP 8:** Connect to your Marketplace Developer Image
 
