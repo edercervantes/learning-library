@@ -56,11 +56,11 @@ You have already applied for and received your Oracle Cloud Free Tier Account.
 
 - Grab the first zip file [here](https://github.com/edercervantes/Script-1-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
 
-    ![](images/050/018.png)
+    ![](images/050/074.png)
 
 - Grab the second zip file [here](https://github.com/edercervantes/Script-2-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
 
-    ![](images/050/074.png)
+    ![](images/050/018.png)
 
 ### **STEP 4:** Get Your Oracle Cloud Credentials
 
