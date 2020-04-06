@@ -117,7 +117,7 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 
     ![](images/050/030.png)
 
-- Drag and drop the zip file you just created earlier into the dashed line box, or click on **Browse** and find it. Then, you can give your **Stack** a name, like `python4dev_terraform`. You can also give a description if you'd like, but it is not necessary. Make sure you are still in the root compartment, and using Terraform version 0.11.x. Then click **Next**.
+- Drag and drop the zip file you just created earlier into the dashed line box, or click on **Browse** and find it. Then, you can give your **Stack** a name, like `python4dev_script1`. You can also give a description if you'd like, but it is not necessary. Make sure you are still in the root compartment, and using Terraform version 0.11.x. Then click **Next**.
 
     ![](images/050/022.png)
 
@@ -314,7 +314,58 @@ Here we will upload the wallet and lab-resources zip files to the instance. They
 
     ![](images/050/089.png)
 
-### **STEP 8:** Connect to your Marketplace Developer Image
+### **STEP 13:** Creating a Resource Manager Stack
+
+Now as you will remember from before, we will again run use resource manager to run the second script.
+
+- On the OCI console, click on the hamburger menu and scroll down to **Solutions and Platform**. Hover over **Resource Manager** and click on **Stacks**.
+
+    ![](images/050/020.png)
+
+- Make sure the **Compartment** on the left side says root. If not, then change it to root. Then, click **Create Stack**.
+
+    ![](images/050/030.png)
+
+- Drag and drop the zip file you just created earlier into the dashed line box, or click on **Browse** and find it. Then, you can give your **Stack** a name, like `python4dev_script2`. You can also give a description if you'd like, but it is not necessary. Make sure you are still in the root compartment, and using Terraform version 0.11.x. Then click **Next**.
+
+    ![](images/050/022.png)
+
+- You will see a list of variables that will be used. Find **PUBLIC_IP** and paste the public ip address for your instance in the given field. Then click **Next**.
+
+    ![](images/050/023.png)
+
+- Finally, review your variables and make sure everything looks good. Then click **create**.
+
+    ![](images/050/025.png)
+	
+### **STEP 14:** Creating OCI resources in Resource Manager
+
+- Now inside of the resource manager, hover over **Terraform Actions** and click on **Plan**.
+
+    ![](images/050/065.png)
+
+-  You can give the plan a name, or keep the default. Then click on **Plan** to begin.
+
+    ![](images/050/066.png)
+
+- Wait for the plan to succeed, then click on **Stack Details**.
+
+    ![](images/050/019.png)
+
+- Again, hover over **Terraform Actions** and click on **Apply**.
+
+    ![](images/050/072.png)
+
+- You can give the apply a name, or keep the default. You can leave the other settings the same. Then click on **Apply**.
+
+    ![](images/050/073.png)
+
+- **The apply may take several minutes. Please be patient.**
+
+    ![](images/050/057.png)
+
+
+### **STEP 15:** Connect to your Marketplace Developer Image
 
 For more information about the Marketplace Developer Image [click here](https://cloudmarketplace.oracle.com/marketplace/en_US/listing/54030984).
 
@@ -327,7 +378,7 @@ For more information about the Marketplace Developer Image [click here](https://
 	![](images/050/035.png)
 
     **If you cannot see your instance, make sure you are in the python4dev compartment.**
-
+<!-- 
 - **If you are on Linux or Mac, use these instructions.** SSH into the image.
     **Note, if you are on Windows, the instructions are below.**
     Open a terminal window on a Mac or command shell on Linux and enter the following command:
@@ -362,7 +413,7 @@ For more information about the Marketplace Developer Image [click here](https://
 
 - You now have an ssh tunnel into your instance!
 
-    ![](images/050/015.png)
+    ![](images/050/015.png) 
 
 **End of Windows instructions**
 
@@ -374,18 +425,22 @@ For more information about the Marketplace Developer Image [click here](https://
 
 	![](images/050/038.png)
 
-- Enter `$ exit` to go back to your local directory.
+- Enter `$ exit` to go back to your local directory. -->
 
 - Open a SSH tunnel.
     ***NOTE:*** do not close this terminal window.  It maintains the tunnel to the developer image, which we access through VNC.  If for whatever reason the window is closed or you are otherwise logged out (sometimes tunnels drop), then just run this again to log in.
     
-    For Windows, see the Windows ssh instructions above, except, change the ports for connection to 5901.
+    <!-- For Windows, see the Windows ssh instructions above, except, change the ports for connection to 5901. -->
 
      This example works on Linux and Mac. **Note:** on Linux you will need to be su.
 
      `$ ssh -i <path/to/your/private-key> -L 5901:localhost:5901 opc@<your IP address>`
 
     ![](images/050/039.png)
+
+- Enter `$ vncserver` to start the vncserver.
+
+	![](images/050/038.png)
 
 - Open a vnc viewer session.  If you don't already have vnc viewer you can download it [here](https://www.realvnc.com/en/connect/download/viewer/).
 
@@ -401,7 +456,7 @@ For more information about the Marketplace Developer Image [click here](https://
 
 	![](images/050/041.png)
 
-### **STEP 9:** Download Files Used in this Workshop
+<!-- ### **STEP 9:** Download Files Used in this Workshop
 
 [Click to Download](https://oracle.github.io/learning-library/workshops/python4atp/lab-resources.zip). **Keep track of which directory this zip file gets saved to.**
 
@@ -441,8 +496,8 @@ For more information about the Marketplace Developer Image [click here](https://
 
     _Now the zip file has been copied into your instance!_
 
-**End of instructions for Windows users**
+**End of instructions for Windows users** -->
 
 **This completes the Lab!**
 
-**You are ready to proceed to [Lab 100](LabGuide100.md)**
+**You are ready to proceed to [Lab 200](LabGuide200.md)**
