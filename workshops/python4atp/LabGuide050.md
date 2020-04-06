@@ -74,7 +74,9 @@ To run our Terraform folder in the cloud, we will take advantage of OCI resource
 
   ![](images/050/014.png)
 
- ### **STEP 5:** Generate your SSH key pair
+ ### **STEP 5:** Generate your SSH key pair and prepare first script
+
+ Here we will get out ssh credentials and prepare the first script to be executable.
 
 - On Linux or Mac enter this in a command shell.
     
@@ -84,29 +86,27 @@ To run our Terraform folder in the cloud, we will take advantage of OCI resource
 
     ![](images/050/028.png)
 
-**If you have Linux or Mac, you can skip ahead to Step 6.**
+- On Windows, enter this in a command shell.
 
-- On Windows, you must have **PUTTY**. If you don't, you can download it [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+    `$ ssh-keygen`
 
-- Search for **PUTTYgen**, then open the application.
+    <!-- I can fill out these instructions later -->
 
-    ![](images/050/018.1.png)
+- Next, find the first zip file you downloaded and unzip it. Open the ssh_keys folder and note that it is empty. This is because we need to add our private key.
 
-- Make sure the type of key is RSA and the number of bits is 2048. Then click on **Generate**.
+    ![](images/050/075.png)
 
-    ![](images/050/058.png)
+- Go to the location of your private key, then copy and paste it into your ssh_keys folder. Then, open **variables.tf** in any text editor and for the ssh_private_key, add the name of your private key. In our case, we will use `id_rsa`. Save it and close the file.
 
-- Copy the public ssh key IN ITS ENTIRETY into your notes. Then press **Save private key**.
+    ![](images/050/076.png)
 
-    ![](images/050/011.png)
+    ![](images/050/077.png)
 
-- You can create a password, but there is no need for our purposes. Press No.
+- Now rezip your folder and remove the original zip.
 
-    ![](images/050/012.png)
+    ![](images/050/078.png)
 
-- Call the private key `alphakey`, then press save.
-
-    ![](images/050/032.png)
+    ![](images/050/079.png)
 
 ### **STEP 6:** Creating a Resource Manager Stack
 
