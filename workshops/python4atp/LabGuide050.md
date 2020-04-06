@@ -120,17 +120,13 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 
     ![](images/050/030.png)
 
-- Drag and drop the zip file you downloaded earlier into the dashed line box, or click on **Browse** and find it. Then, you can give your **Stack** a name, like `python4dev_terraform`. You can also give a description if you'd like, but it is not necessary. Make sure you are still in the root compartment, and using Terraform version 0.11.x. Then click **Next**.
+- Drag and drop the zip file you just created earlier into the dashed line box, or click on **Browse** and find it. Then, you can give your **Stack** a name, like `python4dev_terraform`. You can also give a description if you'd like, but it is not necessary. Make sure you are still in the root compartment, and using Terraform version 0.11.x. Then click **Next**.
 
     ![](images/050/022.png)
 
 - You will see a list of variables that will be used. Find **SSH_PUBLIC_KEY** and paste the public ssh key you created earlier in the given field. **It must be in text format.**
 
     ![](images/050/023.png)
-
-- Then, make an **AUTONOMOUS_DATABASE_ADMIN_PASSWORD**. **The password must be between 12 and 30 characters long, and must contain at least 1 uppercase, 1 lowercase, and 1 numeric character. It cannot contain the double quote symbol (") or the username "admin", regardless of casing.**
-
-    ![](images/050/026.png)
 
 - Next, populate the **OBJ_STORE_NAMESPACE** field with the **Object Storage Namespace** credential you saved earlier. Then click **Next**.
 
