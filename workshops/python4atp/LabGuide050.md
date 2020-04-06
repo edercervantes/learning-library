@@ -310,9 +310,9 @@ Here we will upload the wallet and lab-resources zip files to the instance. They
 
 - Now rezip your folder and remove the original zip.
 
-    ![](images/050/078.png)
+    ![](images/050/088.png)
 
-    ![](images/050/079.png)
+    ![](images/050/089.png)
 
 ### **STEP 8:** Connect to your Marketplace Developer Image
 
