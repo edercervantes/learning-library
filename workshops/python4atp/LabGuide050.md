@@ -162,6 +162,71 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 
     ![](images/050/057.png)
 
+## **STEP 8:** Generate auth token for user
+
+- Navigate to `Identity` > `Users`.  
+
+  ![](images/100/020.png " ")
+
+- Select the username of the current logged in userid (yours will be different from the screenshot). Save that name in your notes.
+
+  ![](images/100/021.png " ")
+
+- Select `Auth Tokens` on the left, and then `Generate Token`.
+
+  ![](images/100/022.png " ")
+
+  ![](images/100/023.png " ")
+
+- Copy the token and save it in your notes.  If you lose this you can always generate more tokens.
+
+  ![](images/100/024.png " ")
+
+### **STEP 9:** Add data to Object Storage Bucket
+
+- [Click to Download](https://oracle.github.io/learning-library/workshops/python4atp/lab-resources.zip). **Keep track of which directory this zip file gets saved to.**
+
+- Go back to the console, and click the **Menu icon** in the upper left corner to open the navigation menu. Under the **Core Infrastructure** section, select **Object Storage** then **Object Storage** .
+
+  ![](images/100/002.png " ")
+
+- Select the **Compartment** `python4dev`.
+
+  ![](images/100/003.png " ")
+
+- Your new Object Storage Bucket should show up in the list. Once it appears click on the `py4dev` bucket url to view the details.
+
+  ![](images/100/005.png " ")
+
+- Unzip the lab-resources.zip file you copied from earlier.
+
+- Navigate to your object storage bucket and then click **Upload Object**
+
+  ![](images/100/015.png " ")
+
+  ![](images/100/016.png " ")
+
+- Click **select files**, then select the `expdp_alpha.dmp` and the `credit_scoring_100k_pq`. Note we will be importing data from the `expdp_alpha.dmp` file, and later querying data from the `credit_scoring_100k_pq` (big data parquet file). The latter file will be used in a future lab. This is just showing you how easy it is to query parquet (and avro) files. Click `Open`, then `Upload Objects`.
+
+  ![](images/100/017.png " ")
+
+  ![](images/100/018.png " ")
+
+  ![](images/100/019.png " ")
+
+- Now, select the icon on the far right to retrieve details from `expdp_alpha.dmp`.
+
+  ![](images/100/053.png " ")
+
+- Copy the URI (don't download the object) and save it in your notes.
+
+  ![](images/100/054.png " ")
+
+- Obtain the URI of the `credit_scoring_100k_pq` file from object storage in your console. Copy the URI path into your notes.
+
+  ![](images/100/061.png " ")
+
+
 ### **STEP 8:** Connect to your Marketplace Developer Image
 
 For more information about the Marketplace Developer Image [click here](https://cloudmarketplace.oracle.com/marketplace/en_US/listing/54030984).
