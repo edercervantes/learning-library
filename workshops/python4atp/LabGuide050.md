@@ -224,7 +224,7 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
   ![](images/100/061.png " ")
 
 
-## **STEP 10:** Download the Autonmous Transaction Processing Database DB Wallet Zip File
+## **STEP 10:** Download the Autonomous Transaction Processing Database DB Wallet Zip File
 
   Click the **Menu icon** in the upper left corner to open the navigation menu. Under the **Database** section, select **Autonomous Transaction Processing**.
 
