@@ -52,9 +52,13 @@ You have already applied for and received your Oracle Cloud Free Tier Account.
     ![](images/hamburger.png)  
 
 
-### **STEP 3:** Download and Install Terraform zip folder
+### **STEP 3:** Download Terraform zip folder
 
-- Grab the zip file [here](https://github.com/edercervantes/terraform-OCI-for-resource-manager) and save it somewhere you can find later.
+- Grab the first zip file [here](https://github.com/edercervantes/Script-1-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
+
+    ![](images/050/018.png)
+
+- Grab the second zip file [here](https://github.com/edercervantes/Script-2-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
 
     ![](images/050/018.png)
 
