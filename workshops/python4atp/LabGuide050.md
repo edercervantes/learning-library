@@ -227,6 +227,35 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
   ![](images/100/061.png " ")
 
 
+## **STEP 10:** Download the Autonmous Transaction Processing Database DB Wallet Zip File
+
+  Click the **Menu icon** in the upper left corner to open the navigation menu. Under the **Database** section, select **Autonomous Transaction Processing**.
+
+  ![](images/100/027.png " ")
+
+- Select the **AlphaOffice** Autonomus Transaction Processing Database.  Be sure to select the correct region, and the correct compartment.
+
+  ![](images/100/028.png " ")
+
+- Click **DB Connection**
+
+  ![](images/100/029.png " ")
+
+- Click **Download**
+
+  ![](images/100/030.png " ")
+
+- Enter the **Password** `helloWorld123` and click **Download**
+
+  ![](images/100/031.png " ")
+
+- Select `Save File` and Click **OK**
+
+  ![](images/100/032.png " ")
+
+- Keep track of where the **Wallet_orcl4py.zip** file was downloaded to.
+
+
 ### **STEP 8:** Connect to your Marketplace Developer Image
 
 For more information about the Marketplace Developer Image [click here](https://cloudmarketplace.oracle.com/marketplace/en_US/listing/54030984).
