@@ -256,6 +256,29 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 - Keep track of where the **Wallet_orcl4py.zip** file was downloaded to.
 
 
+### **STEP 11:** Upload files to your Marketplace Developer Image
+
+Here we will upload the wallet and lab-resources zip files to the instance. They will be needed by the next script.
+
+- Click on the hamburger menu, and navigate to **Core Infrastructure**. Hover over **Compute** and click on **Instances**.
+
+	![](images/050/034.png)
+
+- Click on your image to identify the IP address. Save the IP address in your notes.
+
+	![](images/050/035.png)
+
+- Next, open a terminal window and run this command to upload the wallet zip.
+    `scp -i <path/to/your/private-key> <path/to/your/Wallet_orcl4py.zip> opc@<instance IP address>:/home/opc/atp_wallet`
+
+Then, run this command to upload the lab-resources zip.
+    `scp -i <path/to/your/private-key> <path/to/your/lab-resources.zip> opc@<instance IP address>:/home/opc/tmp/lab-resources`
+	
+    ![](images/050/080.png)
+
+
+### **STEP 12:** Connect to your Marketplace Developer Image
+
 ### **STEP 8:** Connect to your Marketplace Developer Image
 
 For more information about the Marketplace Developer Image [click here](https://cloudmarketplace.oracle.com/marketplace/en_US/listing/54030984).
