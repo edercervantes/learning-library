@@ -54,9 +54,7 @@ You have already applied for and received your Oracle Cloud Free Tier Account.
 
 ### **STEP 3:** Download Terraform zip folder
 
-- Grab the first script zip file [here](https://github.com/edercervantes/Script-1-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
-
-    ![](images/050/074.png)
+- Grab the first script zip file [here](https://github.com/edercervantes/Script-1-terraform-OCI-for-resource-manager-with-Remote-Exec/raw/master/script1-python4atp-remoteExec.zip) and save it somewhere you can find later.
 
 
 ### **STEP 4:** Get Your Oracle Cloud Credentials
@@ -70,6 +68,7 @@ To run our Terraform folder in the cloud, we will take advantage of OCI resource
 - Copy the **Object Storage Namespace** in your notes.
 
   ![](images/050/014.png)
+
 
  ### **STEP 5:** Generate your SSH key pair and prepare first script
 
@@ -105,6 +104,7 @@ To run our Terraform folder in the cloud, we will take advantage of OCI resource
 
     ![](images/050/079.png)
 
+
 ### **STEP 6:** Creating a Resource Manager Stack
 
 Now, we will see the true power of Terraform as opposed to manual creation. By using Terraform, you have a reusable process for creating infrastructure. In some cases, like this one, you don't have to know anything about how the process works. You can deploy different pre-designed infrastructure designs for many different purposes, which frees up users to focus on their projects.
@@ -132,7 +132,8 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 - Finally, review your variables and make sure everything looks good. Then click **create**.
 
     ![](images/050/025.png)
-	
+
+
 ### **STEP 7:** Creating OCI resources in Resource Manager
 
 - Now inside of the resource manager, hover over **Terraform Actions** and click on **Plan**.
@@ -159,6 +160,7 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 
     ![](images/050/057.png)
 
+
 ## **STEP 8:** Generate auth token for user
 
 - Navigate to `Identity` > `Users`.  
@@ -178,6 +180,7 @@ Now, we will see the true power of Terraform as opposed to manual creation. By u
 - Copy the token and save it in your notes.  If you lose this you can always generate more tokens.
 
   ![](images/100/024.png " ")
+
 
 ### **STEP 9:** Add data to Object Storage Bucket
 
@@ -278,9 +281,7 @@ Here we will upload the wallet and lab-resources zip files to the instance. They
 
 ### **STEP 12:** Prepare the second script
 
-- Grab the second script zip file [here](https://github.com/edercervantes/Script-2-terraform-OCI-for-resource-manager-with-Remote-Exec) and save it somewhere you can find later.
-
-    ![](images/050/018.png)
+- Grab the second script zip file [here](https://github.com/edercervantes/Script-2-terraform-OCI-for-resource-manager-with-Remote-Exec/raw/master/script2-python4atp-remoteExec.zip) and save it somewhere you can find later.
 
 - Unzip it and open the folder.
 
@@ -314,6 +315,7 @@ Here we will upload the wallet and lab-resources zip files to the instance. They
 
     ![](images/050/089.png)
 
+
 ### **STEP 13:** Creating a Resource Manager Stack
 
 Now as you will remember from before, we will again run use resource manager to run the second script.
@@ -337,6 +339,7 @@ Now as you will remember from before, we will again run use resource manager to 
 - Finally, review your variables and make sure everything looks good. Then click **create**.
 
     ![](images/050/025.png)
+
 	
 ### **STEP 14:** Creating OCI resources in Resource Manager
 
